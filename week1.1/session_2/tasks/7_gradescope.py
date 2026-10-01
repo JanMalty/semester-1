@@ -9,10 +9,14 @@ Num2=int(input("Enter number 2:"))
 # multiply those numbers together
 Total=Num1*Num2
 # print out the result
-print(Total)
+try:
+    print(Total)
 # There is an extra point available for validating that they entered numbers!
+except:
+    print("invalid input !")
 # Add to your code so that if they entered something other than an integer it prints
 # 'That is not a number' and exits.
+    exit()
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
