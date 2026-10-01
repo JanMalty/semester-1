@@ -13,7 +13,7 @@ try:
     print(Total)
 # There is an extra point available for validating that they entered numbers!
 except:
-    print("invalid input !")
+    print("That is not a number")
 # Add to your code so that if they entered something other than an integer it prints
 # 'That is not a number' and exits.
     exit()
