@@ -3,13 +3,13 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
-Num1=int(input("Enter number 1:"))
-Num2=int(input("Enter number 2:"))
+try:
+    Num1=int(input("Enter number 1:"))
+    Num2=int(input("Enter number 2:"))
 
 # multiply those numbers together
-Total=Num1*Num2
+    Total=Num1*Num2
 # print out the result
-try:
     print(Total)
 # There is an extra point available for validating that they entered numbers!
 except:
