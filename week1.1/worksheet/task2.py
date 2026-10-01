@@ -12,7 +12,7 @@ try:
     amount=int(input("How much you want to save every month?"))
 # Validate that they have entered an integer.
 except:
-    print("Invalid input !")
+    print("Invalid amount")
     exit()
     
 
