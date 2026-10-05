@@ -2,7 +2,7 @@
 # it needs to convert the minutes late into days, hours and minutes
 # all file handling has been done - the section you need to edit is marked by comments below
 
-with open("_data/lateness_data.csv") as f:
+with open("lateness_data.csv") as f:
     data = f.readlines()
 
 data = [line.strip().split(",") for line in data]
