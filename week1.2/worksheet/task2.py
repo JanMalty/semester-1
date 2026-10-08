@@ -1,23 +1,23 @@
 # Worksheet 1.2: Task 2 Solution
 import sys
-import statistics
+from util import read_numbers
 
-x=0
-list=[]
+numbers = read_numbers()
 
-while x==0 :
-    try:
-        val=0
-        val=float(input("Enter a float value:"))
-        list.append(val)
-        x=int(input("Wanna exit? 1 or 0:"))
-    except:
-        print("Error: no numbers provided")
-        sys.exit()
+if len(numbers) == 0:
+    print("Error: no numbers provided", file=sys.stderr)
+    sys.exit()
 
-print(list)
+numbers.sort()
 
-print("Minimum =",min(list))
-print("Maximum =",max(list))
-print("Mean =",sum(list) / len(list))
-print("Median =",statistics.median(list))
+if len(numbers) % 2 == 1:
+    median = numbers[len(numbers) // 2]
+else:
+    middle1 = numbers[(len(numbers) // 2) -1]
+    middle2 = numbers[len(numbers) // 2]
+    median = (middle1 + middle2) / 2
+
+print("Minimum =", min(numbers))
+print("Maximum =", max(numbers))
+print("Mean =", sum(numbers) / len(numbers))
+print("Median =", median)
