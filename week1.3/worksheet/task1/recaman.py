@@ -2,8 +2,22 @@
 
 L = int(input("Length of sequence: ")) # this should be your only input
 
-
 # Your code for the Recaman Sequence
+
+sequence=[]
+a=0
+k=1
+
+for i in range(L):
+    if a != sequence:
+        if a >= 0:
+            a = (2*a) - k
+        else:
+            a = (2*a) + k
+    k+=1
+    sequence.append(a)
+
+
 # You should store the sequence in an appropriate data structure named 'sequence'
 
 
