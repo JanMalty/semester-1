@@ -20,6 +20,7 @@ def currency_converter(amount, from_currency, to_currency):
 
     # your code here
     result = max(0,conversion_rate[from_currency][to_currency] * amount)
+    print(result)
     return result
 
 # Submit only this file currency_converter.py with the completed function.
