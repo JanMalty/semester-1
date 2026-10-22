@@ -6,7 +6,7 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Jan Malty
 """
 
 def currency_converter(amount, from_currency, to_currency):
@@ -19,7 +19,7 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
-
+    print(conversion_rate[from_currency][to_currency] * amount)
     return None
 
 # Submit only this file currency_converter.py with the completed function.
