@@ -29,6 +29,7 @@ def writePGM( filename, image ):
     width,height,max_gray,pixels = image  # unpack the tuple
 
     # open a file for writing
+    
     # write the data in PGM format
     # don't forget the PGM code "P2"
 
