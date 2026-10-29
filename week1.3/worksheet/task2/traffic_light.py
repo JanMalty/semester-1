@@ -17,7 +17,7 @@ num=0
 
 while (maxtime+1) != systime:
     if num == 3:
-            num=0
+            num=-1
     if steps == list(states.values())[num]:
         state = list(states.keys())[num+1]
         num += 1
