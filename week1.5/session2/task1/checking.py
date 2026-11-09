@@ -32,5 +32,8 @@ class Point:
 
 # Test program
 
-p = Point("two", "one")
-print(p.distance())
+try:
+    p = Point("two", "one")
+    print(p.distance())
+except TypeError as e:
+    print(f"Caught an error: {e}")

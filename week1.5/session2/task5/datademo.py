@@ -5,3 +5,16 @@
 
 # Your program should display dataset size, mean and median,
 # followed by the individual values (using a for loop)
+
+from data import Dataset
+
+filename = input("Enter filename: ")
+dataset = Dataset(filename)
+
+print(f"Size: {len(dataset)}")
+print(f"Mean: {dataset.mean()}")
+print(f"Median: {dataset.median()}")
+
+print("Values:")
+for value in dataset:
+    print(value)

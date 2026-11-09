@@ -165,12 +165,12 @@ class LookupTable:
         for i in range(256):
             print(i, "-->", self.LUT[i])
         
-    def apply(self):
-        return
+    def apply(self, image):
+        new_image = image.copy()
+        for i in range(len(new_image.pixels)):
+            new_image.pixels[i] = self.LUT[new_image.pixels[i]]
+        return new_image
 
-    def apply_in_place(self):
-        return
-
-
-lut = LookupTable()
-lut.display()
+    def apply_in_place(self, image):
+        for i in range(len(image.pixels)):
+            image.pixels[i] = self.LUT[image.pixels[i]]

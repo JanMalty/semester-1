@@ -4,14 +4,23 @@
 Classes for working with two-dimensional geometry.
 """
 
-import math
+# Week 1.5, Session 1: Task 4
 
-# Copy Point class definition here
+# Add one or more import statements here to give this program
+# access to the Point and Circle classes defined in geometry.py
+from geometry import Point, Circle
 
-# Add a definition for a Circle class here, giving it
-#  - A constructor that creates fields to represent the centre & radius
-#    of a circle (assume centre is represented as a Point object)
-#  - A method area(), returning the area of the circle
-#  - A method perimeter(), returning the perimeter of the circle
+# Write a program here that
+#  - Creates a Point object, to represent the centre of a circle
+#  - Creates a Circle object, using the Point object and a value for radius
+#  - Displays the area of the circle
+#  - Displays the perimeter of the circle
+x = float(input("Enter x coordinate: "))
+y = float(input("Enter y coordinate: "))
+centre_point = Point(x, y)
 
-# Don't add any testing code to this file!
+radius = float(input("Enter radius: "))
+circle = Circle(radius, centre_point)
+
+print(f"Area: {circle.area():.4f}")
+print(f"Perimeter: {circle.perimeter():.4f}")
